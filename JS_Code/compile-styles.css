@@ -1,0 +1,30 @@
+#editor {
+  top: 0;
+  right: 0;
+  height:200px;
+  left: 0;
+}
+
+#compile-errors:before{
+  content:'compile errors';
+}
+
+#errors:before{
+  content:'run errors';
+
+}
+
+#compile-errors:before, #errors:before{
+  position: absolute;
+  margin-top: -15px;
+  color: gray;
+}
+
+#compile-errors, #errors{
+  color: red;
+}
+
+pre#result{
+  background: black !important;
+  color:  white;
+}
