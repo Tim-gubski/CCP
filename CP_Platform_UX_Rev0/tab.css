@@ -1,0 +1,105 @@
+.tabs {
+  border: 1px solid #cccccc;
+  
+  width: 60%;
+  margin:auto;
+  margin-top: 10%;
+  height:350px;
+}
+
+.title{
+  font-family: sans-serif;
+  color: #dc2d5e;
+  text-align: center;
+}
+.tabs__sidebar{
+  height: 15%;
+  width: 100%;
+  /*flex-shrink: 0;!*/
+ /* background-color: red;*/
+}
+
+.tabs .tabs__sidebar button {
+  width: 25%;
+  height: 100%;
+  float: left;
+  border: none;
+  outline:none;
+  cursor: pointer;
+  padding: 10px;
+  font-family: sans-serif;
+  font-size: 18px;
+  background-color: yellow;
+  /*display: block;
+  padding:10px;
+  background-color: #eeeeee;
+  border: none;
+  width:100%;
+  outline: none;
+  cursor:pointer;*/
+}
+
+.tabsButton:active {
+  background-color: red;
+}
+
+.tabsButton:not(:last-of-type){
+  border-bottom: 1px solid #cccccc;
+
+}
+.tabsButton--active{
+  font-weight: bold;
+  /*border-right: 2px solid orange;*/
+  
+}
+
+.tab__content{
+  height: 85%;
+  background-color:lightgreen;
+  color: black;
+  text-align: center;
+  padding-top: 2%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 22px;
+  display: none;
+  /*padding:10px;
+  font-size: 0.8rem;
+  display: none;*/
+
+}
+
+.tab__content--active {
+   display: block;
+}
+
+#editor {
+  top: 0;
+  right: 0;
+  height:200px;
+  left: 0;
+}
+
+#compile-errors:before{
+  content:'compile errors';
+}
+
+#errors:before{
+  content:'run errors';
+
+}
+
+#compile-errors:before, #errors:before{
+  position: absolute;
+  margin-top: -15px;
+  color: gray;
+}
+
+#compile-errors, #errors{
+  color: red;
+}
+
+pre#result{
+  background: black !important;
+  color:  white;
+}
