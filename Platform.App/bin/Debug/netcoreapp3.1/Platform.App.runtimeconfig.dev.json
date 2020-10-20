@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\JunioTech\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\JunioTech\\.nuget\\packages"
+      "C:\\Users\\mabservi\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\mabservi\\.nuget\\packages"
     ]
   }
 }

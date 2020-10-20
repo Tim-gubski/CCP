@@ -1,4 +1,11 @@
 //alert("heheh")
+$(function(){
+  $(document).scroll(function(){
+     var $nav = $("#mainNavbar");
+     $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height())
+  })
+})
+
 
 let buttons = document.querySelectorAll(".btn")
 let panel = document.querySelector(".tabPanel")
