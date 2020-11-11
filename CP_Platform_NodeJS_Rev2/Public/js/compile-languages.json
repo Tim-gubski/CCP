@@ -1,0 +1,160 @@
+[{
+  "id": 45,
+  "name": "Assembly",
+  "editor_mode": "assembly_x86"
+}, {
+  "id": 46,
+  "name": "Bash",
+  "editor_mode": "batchfile"
+}, {
+  "id": 50,
+  "name": "C",
+  "editor_mode": "c_cpp",
+  "jdoodleName": "c"
+}, {
+  "id": 54,
+  "name": "C++",
+  "editor_mode": "c_cpp",
+  "jdoodleName": "cpp"
+},
+{
+  "id": 51,
+  "name": "C#",
+  "editor_mode": "csharp",
+  "jdoodleName": "csharp"
+}, {
+  "id": 77,
+  "name": "COBOL",
+  "editor_mode": "cobol"
+}, {
+  "id": 55,
+  "name": "Common Lisp",
+  "editor_mode": "lisp"
+}, {
+  "id": 56,
+  "name": "D",
+  "editor_mode": "d",
+  "jdoodleName": "d"
+}, {
+  "id": 57,
+  "name": "Elixir",
+  "editor_mode": "elixir",
+  "jdoodleName": "elixir"
+}, {
+  "id": 58,
+  "name": "Erlang",
+  "editor_mode": "erlang"
+},
+{
+  "id": 87,
+  "name": "F#",
+  "editor_mode": "fsharp",
+  "jdoodleName": "fsharp"
+}, {
+  "id": 59,
+  "name": "Fortran",
+  "editor_mode": "fortran"
+}, {
+  "id": 60,
+  "name": "Go",
+  "editor_mode": "golang"
+}, {
+  "id": 88,
+  "name": "Groovy",
+  "editor_mode": "groovy",
+  "jdoodleName": "groovy"
+}, {
+  "id": 61,
+  "name": "Haskell",
+  "editor_mode": "haskell",
+  "jdoodleName": "haskell"
+}, {
+  "id": 62,
+  "name": "Java",
+  "editor_mode": "java",
+  "jdoodleName": "java"
+}, {
+  "id": 63,
+  "name": "JavaScript",
+  "editor_mode": "javascript",
+  "jdoodleName": "nodejs",
+  "selected": "selected"  
+}, {
+  "id": 78,
+  "name": "Kotlin",
+  "editor_mode": "kotlin",
+  "jdoodleName": "kotlin"
+}, {
+  "id": 64,
+  "name": "Lua",
+  "editor_mode": "lua",
+  "jdoodleName": "lua"
+}, {
+  "id": 79,
+  "name": "Objective-C",
+  "editor_mode": "objectivec",
+  "jdoodleName": "objc"
+}, {
+  "id": 67,
+  "name": "Pascal",
+  "editor_mode": "pascal",
+  "jdoodleName": "pascal"
+}, {
+  "id": 85,
+  "name": "Perl",
+  "editor_mode": "perl",
+  "jdoodleName": "perl"
+}, {
+  "id": 68,
+  "name": "PHP",
+  "editor_mode": "php",
+  "jdoodleName": "php"
+}, {
+  "id": 69,
+  "name": "Prolog",
+  "editor_mode": "prolog",
+  "jdoodleName": "prolog"
+}, {
+  "id": 71,
+  "name": "Python",
+  "editor_mode": "python",
+  "jdoodleName": "python3"
+}, {
+  "id": 80,
+  "name": "R",
+  "editor_mode": "r",
+  "jdoodleName": "r"
+}, {
+  "id": 72,
+  "name": "Ruby",
+  "editor_mode": "ruby",
+  "jdoodleName": "ruby"
+}, {
+  "id": 73,
+  "name": "Rust",
+  "editor_mode": "rust",
+  "jdoodleName": "rust"
+}, {
+  "id": 81,
+  "name": "Scala",
+  "editor_mode": "scala",
+  "jdoodleName": "scala"
+}, {
+  "id": 82,
+  "name": "SQL",
+  "editor_mode": "sql",
+  "jdoodleName": "sql"
+}, {
+  "id": 83,
+  "name": "Swift",
+  "editor_mode": "swift",
+  "jdoodleName": "swift"
+}, {
+  "id": 74,
+  "name": "TypeScript",
+  "editor_mode": "typescript"
+}, {
+  "id": 84,
+  "name": "Visual Basic.Net",
+  "editor_mode": "vbscript"
+}]

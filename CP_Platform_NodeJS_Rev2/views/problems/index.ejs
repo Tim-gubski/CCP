@@ -1,0 +1,39 @@
+<%- include("../partials/head") %>
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/table.css">
+</head>
+<%- include("../partials/navbar") %>
+
+
+<body>
+  <section class="container">
+    <div class="row align-items-center">
+      <table id="problem-table" class="table mt-5">
+        <thead>
+          <tr>
+            <th class="problem"> Problem </th>
+            <th class="category">Category </th>
+            <th class="points"> Edit</th>
+          </tr>
+        </thead>
+        <% gallery.forEach(function(problem){ %>
+        <tbody>
+          <td class="problem">
+            <h4><a href="/<%= problem._id%>"><%= problem.name %></a></h4>
+          </td>
+          <td class="category"><%= problem.time %></td>
+          <td class="points"><a href="/<%= problem._id%>/edit" class="btn btn-warning">EDIT</a>
+            <hr>
+            <form id="deleteform" action="/<%= problem._id %>?_method=DELETE" method="POST">
+              <button class="btn btn-secondary">DELETE</button>
+            </form>
+          </td>
+        </tbody>
+        <% })%>
+      </table>
+    </div>
+    <div class="row align-items-center"> <a href="/problem/new" class="btn btn-success btnNew">ADD NEW CHALLENGE</a>
+    </div>
+
+  </section>
+  <%- include("../partials/footer") %>
