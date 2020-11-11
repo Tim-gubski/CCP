@@ -1,45 +1,8 @@
 //alert("heheh")
-$(function(){
-  $(document).scroll(function(){
-     var $nav = $("#mainNavbar");
-     $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height())
-  })
-})
-
-
-let buttons = document.querySelectorAll(".btn")
-let panel = document.querySelector(".tabPanel")
-
-function setUpbar(){
-  document.querySelectorAll(".tabsButton").forEach(button => {
-    button.addEventListener("click", function(){
-      const sideBar = button.parentElement;
-      const tabsContainer = sideBar.parentElement;
-      const tabNumber = button.dataset.forTab;
-      const tabToActivate = tabsContainer.querySelector(`.tab__content[data-tab ="${tabNumber}"]`)
-
-      sideBar.querySelectorAll(".tabsButton").forEach(button =>{
-        button.classList.remove("tabsButton--active")
-      });
-
-      tabsContainer.querySelectorAll(".tab__content").forEach(tab =>{
-        tab.classList.remove("tab__content--active")
-      });
-
-      button.classList.add("tabsButton--active");
-      tabToActivate.classList.add("tab__content--active");
-
-    })
-  })
-}
-
-document.addEventListener("DOMContentLoaded", () =>{
-  setUpbar();
-})
 
 "use strict";
 
-let languagesJson = '/compile-languages.json'
+let languagesJson = 'compile-languages.json'
 let languagesSelect = '.language-select'
 let judgeKey = 'fb0e781148msh89f403588aab478p199540jsn84ef056e595a'
 let judgeHost = 'judge0.p.rapidapi.com'
@@ -270,4 +233,41 @@ jQuery(function($) {
 
 })
 
+$(function(){
+  $(document).scroll(function(){
+     var $nav = $("#mainNavbar");
+     $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height())
+  })
+})
+
+
+let buttons = document.querySelectorAll(".btn")
+let panel = document.querySelector(".tabPanel")
+
+function setUpbar(){
+  document.querySelectorAll(".tabsButton").forEach(button => {
+    button.addEventListener("click", function(){
+      const sideBar = button.parentElement;
+      const tabsContainer = sideBar.parentElement;
+      const tabNumber = button.dataset.forTab;
+      const tabToActivate = tabsContainer.querySelector(`.tab__content[data-tab ="${tabNumber}"]`)
+
+      sideBar.querySelectorAll(".tabsButton").forEach(button =>{
+        button.classList.remove("tabsButton--active")
+      });
+
+      tabsContainer.querySelectorAll(".tab__content").forEach(tab =>{
+        tab.classList.remove("tab__content--active")
+      });
+
+      button.classList.add("tabsButton--active");
+      tabToActivate.classList.add("tab__content--active");
+
+    })
+  })
+}
+
+document.addEventListener("DOMContentLoaded", () =>{
+  setUpbar();
+})
 

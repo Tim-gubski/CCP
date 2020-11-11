@@ -1,0 +1,8 @@
+var x = "All this is syntax highlighted";
+console.log('this is output');
+
+try{
+    t.s
+}catch(e){
+    console.log(e);
+}
