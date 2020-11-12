@@ -1,0 +1,86 @@
+<%- include("partials/head") %>
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/table.css">
+</head>
+<%- include("partials/navbar") %>
+
+<div class="container-fluid">
+  <div class="row mt-5">
+    <div class="col-12 col-md-3 textBlur">
+      <div class="tabsRev2">
+        <div class="tabs__sidebar">
+          <button class="tabsButton tabsButton--active btn btn-success" data-for-tab="1">Instructions</button>
+          <button class="tabsButton btn btn-warning" data-for-tab="2">Resources</button>
+          <button class="tabsButton btn btn-primary" data-for-tab="3">Solutions</button>
+          <button class="tabsButton btn btn-light"><a href="/problem">Go back</a></button>
+        </div>
+
+        <div class="tab__content tab__content--active" data-tab="1">
+          <p><h5>Problem to solve</h5><%= specific.problem %></p>
+          <p><h5>Input</h5><%= specific.input %></p>
+          <p><h5>Output</h5><%= specific.output %></p>
+          <table class="codingPageTable">
+            <thead>
+              <tr>
+                <th>Sample Input 1</th>
+                <th>Sample Output 1</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><pre><code><%= specific.sampleInputOne%></code></pre></td>
+                <td><pre><code><%= specific.sampleOutputOne%></code></pre></td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="codingPageTable">
+            <thead>
+              <tr>
+                <th>Sample Input 2</th>
+                <th>Sample Output 2</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><pre><code><%= specific.sampleInputTwo%></code></pre></td>
+                <td><pre><code><%= specific.sampleOutputTwo%></code></pre></td>
+              </tr>
+            </tbody>
+          </table>
+         
+        </div>
+        <div class="tab__content" data-tab="2">
+          <h3>Resources</h3> Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, commodi.
+        </div>
+        <div class="tab__content" data-tab="3">
+          <h3>Solutions</h3> Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, commodi.
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-12 col-md-8 blur">
+      <div class="btn-group mb-5" role="group" aria-label="Basic example">
+        <h3 class="pick">Pick the language</h3>
+
+        <select id="local-dropdown" class="browser-default  language-select">
+        </select>
+
+      </div>
+      <div id="editor"></div>
+      <div class="card">
+        <button type="button" class="btn btn-success compile">Compile</button>
+        <h5 id="status"></h5>
+
+        <pre id="result" class="output"></pre>
+        <pre id="compile-errors"></pre>
+        <pre id="errors" class="output"></pre>
+
+        <div id="remaning"></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<%- include("partials/footer") %>

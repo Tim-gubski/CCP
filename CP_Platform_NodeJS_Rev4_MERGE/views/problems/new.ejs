@@ -1,0 +1,55 @@
+<%- include("../partials/head") %>
+<link rel="stylesheet" href="/css/style.css">
+
+</head>
+<%- include("../partials/navbar") %>
+
+<body>
+
+  <section class="container align-items-center">
+
+    <h2 class="newChallengeHeader">New challenge for kids</h2>
+    
+
+
+      <form action="/problem" method="POST">
+        <div class="form-group">
+          <input class='form-control' type="text" placeholder="Title of the challenge" name="name">
+        </div>
+        <div class="form-group">
+          <input class='form-control' type="text" placeholder="Time to complete" name="time">
+        </div>
+        <div class="form-group">
+          <textarea class='form-control' id="story" placeholder="Description of the challenge"  name="problem" rows="10" cols="68"></textarea>
+        </div>
+        <div class="form-group">
+          <textarea class='form-control' id="storyInput" placeholder="Input(optional)" name="input" rows="5" cols="68"></textarea>
+        </div>
+        <div class="form-group">
+          <code><textarea class='form-control' id="storyOutput" placeholder="Output(optional)" name="output" rows="5" cols="68"></textarea></code>
+        </div>
+        <div class="form-group">
+          <code><textarea class='form-control' id="storyOutput" placeholder="Sample Input 1" name="sampleInputOne" rows="5" cols="68"></textarea></code>
+        </div>
+        <div class="form-group">
+          <code><textarea class='form-control' id="storyOutput" placeholder="Sample Output 1" name="sampleInputTwo" rows="5" cols="68"></textarea></code>
+        </div>
+        <div class="form-group">
+          <code><textarea class='form-control' id="storyOutput" placeholder="Sample Input 2" name="sampleOutputOne" rows="5" cols="68"></textarea></code>
+        </div>
+        <div class="form-group">
+          <code><textarea class='form-control' id="storyOutput" placeholder="Sample Output 2" name="sampleOutputTwo" rows="5" cols="68"></textarea></code>
+        </div>
+        <div class="form-group center">
+          <button class='btn btn-lg btn-primary'>Submit!</button>
+          <a href="/problem" class ="btn btn-lg btn-warning">Go back</a>
+        </div>
+
+      </form>
+
+      
+  
+  </section>
+
+
+  <%- include("../partials/footer") %>
