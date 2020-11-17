@@ -17,7 +17,11 @@ router.post("/sendCode",function(req,res){
 
 router.get("/view",function(req,res){
   var message
-  var answer = "hello hello 2"
+
+  //REPLACE THIS WITH DB CORRECT ANSWER
+  var answer = "4 6 0 8 12"
+  //===================================
+
   if(result.replace(/\s+/g, "") == answer.replace(/\s+/g, "")){
     message = "Code Correct"
   } else{
@@ -117,7 +121,11 @@ function sendCode(req,res, code, lang, callback){
   console.log(languages)
   var program = {
       script : code,
-      stdin:"hello \n hello 2",
+      
+      //REPLACE THIS WITH DB TEST INPUT
+      stdin:"5\n1 3\n2 4\n0 0\n3 5\n2 10\n",
+      //===============================
+
       language: languages.find(element => element.id == lang).jdoodleName,
       versionIndex: "0",
       clientId: "1aa782187897f6a178108a3cb0cb8e9",

@@ -1,0 +1,20 @@
+coding challenge add 2 numbers
+
+INPUT
+5 //how many cases will be tested
+1 3  //case1
+2 4  //case2
+0 0  //case3
+3 5  //case4
+2 10 //case5
+
+5\n1 3\n2 4\n0 0\n3 5\n2 10\n
+
+CORRECT OUTPUT
+4
+6
+0
+8
+12
+
+4 6 0 8 12
