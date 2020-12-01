@@ -72,7 +72,10 @@
   "id": 62,
   "name": "Java",
   "editor_mode": "java",
-  "jdoodleName": "java"
+  "jdoodleName": "java",
+  "starter":"import java.util.Scanner;Scanner myObj = new Scanner(System.in);String num = myObj.nextLine();for(int sdkjfhsdf = 0; sdkjfhsdf<num; sdkjfhsdf++){",
+  "ender":"}"
+  
 }, {
   "id": 63,
   "name": "JavaScript",
@@ -118,7 +121,9 @@
   "id": 71,
   "name": "Python",
   "editor_mode": "python",
-  "jdoodleName": "python3"
+  "jdoodleName": "python3",
+  "starter":"asdflkajhsd=input()\nfor fdskjfhskdjf in range(int(asdflkajhsd)):\n",
+  "ender":""
 }, {
   "id": 80,
   "name": "R",

@@ -12,7 +12,12 @@ var result
 // COMPLILE CODE!
 
 router.post("/sendCode",function(req,res){
-  sendCode(req,res,req.body.code,req.body.lang)
+  //CODE AUGMENTATION
+  var code = req.body.code
+  code = indent(code,1)
+  code = languages.find(element => element.id == req.body.lang).starter + code + languages.find(element => element.id == req.body.lang).ender
+  console.log(code)
+  sendCode(req,res,code,req.body.lang)
 })
 
 router.get("/view",function(req,res){
@@ -146,6 +151,16 @@ function sendCode(req,res, code, lang, callback){
       res.redirect("/view")
 
   });
+}
+
+function indent(str, numOfIndents, opt_spacesPerIndent) {
+  str = str.replace(/^(?=.)/gm, new Array(numOfIndents + 1).join('\t'));
+  numOfIndents = new Array(opt_spacesPerIndent + 1 || 0).join(' '); // re-use
+  return opt_spacesPerIndent
+    ? str.replace(/^\t+/g, function(tabs) {
+        return tabs.replace(/./g, numOfIndents);
+    })
+    : str;
 }
 
 module.exports = router
