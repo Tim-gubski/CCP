@@ -14,7 +14,8 @@ const problemSchema = new mongoose.Schema(
     sampleInputOne: String,
     sampleInputTwo: String,
     sampleOutputOne: String,
-    sampleOutputTwo: String
+    sampleOutputTwo: String,
+    solution: String,
   })
 
 module.exports = mongoose.model('Problem', problemSchema)
