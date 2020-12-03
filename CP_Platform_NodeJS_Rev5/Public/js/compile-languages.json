@@ -73,8 +73,9 @@
   "name": "Java",
   "editor_mode": "java",
   "jdoodleName": "java",
-  "starter":"import java.util.Scanner;Scanner myObj = new Scanner(System.in);String num = myObj.nextLine();for(int sdkjfhsdf = 0; sdkjfhsdf<num; sdkjfhsdf++){",
-  "ender":"}"
+  "starter":"public static void main(String[] args) { java.util.Scanner sc = new java.util.Scanner(System.in); String num = sc.nextLine(); for(int sdkjfhsdf = 0; sdkjfhsdf<Integer.parseInt(num); sdkjfhsdf++){",
+  "ender":"}",
+  "starter_replace":"public static void main(String[] args) {"
   
 }, {
   "id": 63,
