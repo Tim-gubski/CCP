@@ -1,0 +1,125 @@
+
+table{
+  border-spacing: 0;
+    width: 100%;
+    margin-left: auto;
+    margin-top: 2 rem;
+    margin-right: auto;
+    margin-bottom: .5em;
+    background: whitesmoke;
+    border: 1px solid black
+}
+
+/*table {
+  margin-top: 20px;
+  display: grid;
+  border-collapse: collapse;
+  min-width: 100%;
+  grid-template-columns: 
+    minmax(300px, 1fr)
+    minmax(150px, 1.67fr)
+    minmax(150px, 1.67fr)
+   
+}*/
+
+table th {
+  height: 2em;
+  color: #fff;
+  /*background-color: #3b3b3b;*/
+  background-color:grey;
+  border: 1px solid black;
+ /* border-width: 1px 1px 0 0;*/
+  border-style: solid;
+  padding: 4px 10px;
+  vertical-align: middle;
+  text-align: center;
+  white-space: nowrap;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+#problem-table td.problem {
+  text-align: left;
+  padding-left: 1em;
+  width: 50%;
+}
+
+.table td:first-child {
+  border-color: 1px solid black
+  /*border-width: 1px 1px 0;*/
+}
+
+#problem-table td.category {
+  text-align: left;
+  padding: 0 1em;
+}
+
+
+.table td {
+  border-color: black;
+  border-width: 1px 1px 0 0;
+  border-style: solid;
+  padding: 7px 5px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.btnNew {
+  margin: 2rem auto;
+}
+
+/** TABLE in coding page **/
+
+.codingPageTable {
+  margin-left: 0;
+  width: 40%;
+  
+}
+pre{
+  padding-left: 10px;
+}
+.codingPageTable th {
+  font-size: 1em;
+  color: #fff;
+  /*background-color: #3b3b3b;*/
+  background-color: gainsboro ;
+  /*width: 40%*/
+}
+
+.codingPageTable td{
+  height: 1em;
+  color: #fff;
+  border-left: 1px solid black;
+  /*background-color: #3b3b3b;*/
+
+  /*width: 50%*/
+}
+
+.codingPageTable tbody {
+  text-align: left;
+}
+
+td {
+  padding: 0;
+}
+
+th {
+  cursor: pointer;
+}
+
+@media (max-width: 1000px){
+ .row {
+   margin:0
+ }
+#problem-table thead tr> th  {
+  font-size: 1.1rem;
+}
+ #problem-table td h4 > a {
+   font-size: 1.1rem
+
+ }
+
+ .category {
+   font-size: 0.9rem
+ }
+}
