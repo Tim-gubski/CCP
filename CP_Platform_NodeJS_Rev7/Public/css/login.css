@@ -1,0 +1,64 @@
+
+body,html
+{
+height:100%;
+}
+
+hr.style-one {
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+  margin-top: 5%
+}
+#form-wrapper {     
+  position: fixed !important;
+
+  top: 40%;
+  
+  left: 50%;
+  
+  transform: translate(-50%, -50%);
+  
+  
+}
+.register {
+  color: blueviolet;
+  font-size: 1.1em;
+  margin-left: 30%;
+}
+#form-wrapper h1{
+  color: blueviolet;
+}
+@media (max-width: 1400px){
+  .register {
+    color: blueviolet;
+    font-size: 1.1em;
+    margin-left: 10%;
+  }
+}
+
+@media (max-width: 1000px){
+  .register {
+    font-size: 1em;
+    margin-left: 30%;
+  }
+
+  #form-wrapper {
+    width: 40%;
+
+
+  }
+
+  
+}
+
+@media (max-width: 770px){
+  .register {
+    font-size: 0.9em;
+    margin-left: 10%;
+  }
+  #form-wrapper {
+    width: 50%;
+}
+}

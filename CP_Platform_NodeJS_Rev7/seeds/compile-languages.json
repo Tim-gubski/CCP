@@ -1,0 +1,136 @@
+[{
+  "id": 45,
+  "name": "Assembly",
+  "editor_mode": "assembly_x86"
+}, {
+  "id": 46,
+  "name": "Bash",
+  "editor_mode": "batchfile"
+}, {
+  "id": 50,
+  "name": "C",
+  "editor_mode": "c_cpp"
+}, {
+  "id": 54,
+  "name": "C++",
+  "editor_mode": "c_cpp"
+},
+{
+  "id": 51,
+  "name": "C#",
+  "editor_mode": "csharp"
+}, {
+  "id": 77,
+  "name": "COBOL",
+  "editor_mode": "cobol"
+}, {
+  "id": 55,
+  "name": "Common Lisp",
+  "editor_mode": "lisp"
+}, {
+  "id": 56,
+  "name": "D",
+  "editor_mode": "d"
+}, {
+  "id": 57,
+  "name": "Elixir",
+  "editor_mode": "elixir"
+}, {
+  "id": 58,
+  "name": "Erlang",
+  "editor_mode": "erlang"
+},
+{
+  "id": 87,
+  "name": "F#",
+  "editor_mode": "fsharp"
+}, {
+  "id": 59,
+  "name": "Fortran",
+  "editor_mode": "fortran"
+}, {
+  "id": 60,
+  "name": "Go",
+  "editor_mode": "golang"
+}, {
+  "id": 88,
+  "name": "Groovy",
+  "editor_mode": "groovy"
+}, {
+  "id": 61,
+  "name": "Haskell",
+  "editor_mode": "haskell"
+}, {
+  "id": 62,
+  "name": "Java",
+  "editor_mode": "java"
+}, {
+  "id": 63,
+  "name": "JavaScript",
+  "editor_mode": "javascript",
+  "selected": "selected"  
+}, {
+  "id": 78,
+  "name": "Kotlin",
+  "editor_mode": "kotlin"
+}, {
+  "id": 64,
+  "name": "Lua",
+  "editor_mode": "lua"
+}, {
+  "id": 79,
+  "name": "Objective-C",
+  "editor_mode": "objectivec"
+}, {
+  "id": 67,
+  "name": "Pascal",
+  "editor_mode": "pascal"
+}, {
+  "id": 85,
+  "name": "Perl",
+  "editor_mode": "perl"
+}, {
+  "id": 68,
+  "name": "PHP",
+  "editor_mode": "php"
+}, {
+  "id": 69,
+  "name": "Prolog",
+  "editor_mode": "prolog"
+}, {
+  "id": 71,
+  "name": "Python",
+  "editor_mode": "python"
+}, {
+  "id": 80,
+  "name": "R",
+  "editor_mode": "r"
+}, {
+  "id": 72,
+  "name": "Ruby",
+  "editor_mode": "ruby"
+}, {
+  "id": 73,
+  "name": "Rust",
+  "editor_mode": "rust"
+}, {
+  "id": 81,
+  "name": "Scala",
+  "editor_mode": "scala"
+}, {
+  "id": 82,
+  "name": "SQL",
+  "editor_mode": "sql"
+}, {
+  "id": 83,
+  "name": "Swift",
+  "editor_mode": "swift"
+}, {
+  "id": 74,
+  "name": "TypeScript",
+  "editor_mode": "typescript"
+}, {
+  "id": 84,
+  "name": "Visual Basic.Net",
+  "editor_mode": "vbscript"
+}]
