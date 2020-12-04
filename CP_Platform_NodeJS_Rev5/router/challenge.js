@@ -14,12 +14,12 @@ var result
 router.post("/sendCode",function(req,res){
   //CODE AUGMENTATION
   var code = req.body.code
-  // if(languages.find(element => element.id == req.body.lang).starter_replace!=null){
-  //   code = indent(code,1)
-  //   code = languages.find(element => element.id == req.body.lang).starter + code + languages.find(element => element.id == req.body.lang).ender
-  // }else{
+  if(languages.find(element => element.id == req.body.lang).starter_replace!=""){
+    code = indent(code,1)
+    code = languages.find(element => element.id == req.body.lang).starter + code + languages.find(element => element.id == req.body.lang).ender
+  }else{
     code = code.replace(languages.find(element => element.id == req.body.lang).starter_replace,languages.find(element => element.id == req.body.lang).starter) + languages.find(element => element.id == req.body.lang).ender
-  // }
+  }
 
   console.log(code)
   sendCode(req,res,code,req.body.lang)
