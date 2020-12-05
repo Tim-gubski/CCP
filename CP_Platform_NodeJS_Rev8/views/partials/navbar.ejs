@@ -1,33 +1,38 @@
-<div class="container-fluid">
 
   <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark fixed-top justify-content-between">
-    <a id="brand" class="navbar-brand" href='/'>JunioTech</a>
+    <div class="container-fluid">
+
+  <a id="brand" class="navbar-brand" href='/' >JunioTech</a>
    <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse"
       data-target="#navbarSupportedContent15" aria-controls="navbarSupportedContent15" aria-expanded="false"
-      aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      aria-label="Toggle navigation"><span class="navbar-toggler-icon">   
+        <i class="fas fa-bars" style="color:green; font-size:28px;"></i>
+    </span></button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent15">
 
-      <ul class='navbar-nav ml-auto'>
-        <li class="nav-item"><a class="nav-link" href="/problem">Problems</a></li>
+      <ul class='navbar-nav mx-auto'>
+        
+        <!--<li class="nav-item" id="constant"><a class="nav-link" href="/">JunioTech</a></li>-->
+        <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="/problem">Challenges</a></li>
         <% if(currentUser) { %>
-        <li class="nav-item">
-          <p class="welcome">Welcome! <%= currentUser.username %></p>
-        </li>
+          <li class="nav-item"><a class="nav-link" href="/user">My Account</a></li>
         <%  }%>
         <% if(!currentUser) { %>
         <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
-        <li class="nav-item"><a class="nav-link" href="/register">Register</a></li>
+       <!-- <li class="nav-item"><a class="nav-link" href="/register">Register</a></li> -->
         <% } else { %>
+        
         <li class="nav-item"><a class="nav-link" href="/logout">Log out</a></li>
-        <li class="nav-item"><a class="nav-link" href="/user">My Account</a></li>
         <% } %>
 
       </ul>
     </div>
-
+  </div>
   </nav>
-</div>
+
+
 <!--Container to show the success or error messages-->
 <div id="message" class="container">
   <% if (error && error.length > 0) { %>
@@ -45,3 +50,4 @@
 
 
 <body>
+  <hr class="style-six"> 

@@ -1,0 +1,49 @@
+<%- include("./partials/head") %>
+<link rel="stylesheet" href="/css/style.css">
+
+<link rel="stylesheet" href="/css/user.css">
+</head>
+<%- include("./partials/navbar") %>
+
+<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+
+<div class="wrapper">
+    <div class="left">
+        <img src="https://images.unsplash.com/photo-1599666505327-7758b44a9985?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTB8fGNvZGluZyUyMGtpZHN8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="user" width="200">
+        <h4><%= currentUser.username %></h4>
+         
+    </div>
+    <div class="right">
+        <div class="info">
+            <h3>Information</h3>
+            <div class="info_data">
+                 <div class="data">
+                    <h4>Username</h4>
+                    <h5><%= currentUser.username %></h5>
+                 </div>
+                 <div class="data">
+                   <h4>Update information</h4>
+                   <a href="/changepassword">Change password</a>
+                   <a href="/changename">Change name</a>
+                </div>
+                
+            </div>
+        </div>
+      
+      <div class="projects">
+            <h3>Projects</h3>
+            <div class="projects_data">
+                 <div class="data">
+                    <h4>Recent</h4>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                 </div>
+                 <div class="data">
+                   <h4>Most Viewed</h4>
+                    <p>dolor sit amet.</p>
+              </div>
+            </div>
+        </div>
+      
+    </div>
+</div>
+  <%- include("./partials/footer") %>

@@ -1,0 +1,73 @@
+<%- include("../partials/head") %>
+<link rel="stylesheet" href="/css/style.css">
+
+</head>
+<%- include("../partials/navbar") %>
+<body>
+
+  <section class="container align-items-center">
+    <h2 class="newChallengeHeader" >Update the challenge!</h2>
+  
+      <form action="/<%= problem._id %>?_method=PUT" method="POST"  style=" border:2px black dashed; margin-bottom:2%">
+        <div class ="form-group">
+          <label for="problem[name]" class="form-label" style="margin-top:1%">Name of the challenge</label>
+          <input class='form-control' type="text" placeholder="Name of the problem" value ="<%= problem.name %>" name="problem[name]">
+        </div>
+        <div class="form-group">
+          <label for="problem[time]" class="form-label">Time to complete</label>
+          <input class='form-control' type="text" placeholder="Time to complete" value ="<%= problem.time %>" name="problem[time]">
+        </div>
+        <div class="form-group">
+          <label for="problem[level]" class="form-label">Difficulty level (1-5)</label>
+          <input class='form-control' type="text" placeholder="Level of difficulty" value ="<%= problem.level %>" name="problem[level]">
+        </div>
+        <div class="form-group">
+          <label for="problem[problem]" class="form-label">Challenge Description</label>
+          <textarea class='form-control' id="story" placeholder="Problem description" name="problem[problem]" rows="10" cols="68"><%= problem.problem%></textarea>
+        </div>
+        <div class="form-group">
+          <label for="problem[input]" class="form-label">Input</label>
+          <textarea class='form-control' id="storyInput" placeholder="Problem Input" name="problem[input]" rows="5" cols="68"><%= problem.input%></textarea>
+        </div>
+        <div class="form-group">
+          <label for="problem[output]" class="form-label">Output</label>
+          <code><textarea class='form-control' id="storyOutput" placeholder="Problem Output" name="problem[output]" rows="5" cols="68"><%= problem.output%></textarea></code>
+        </div>
+        <div class="form-group">
+          <label for="problem[answer]" class="form-label">Testing Output</label>
+          <textarea class='form-control' id="answer" placeholder ="Answer" name="problem[answer]" rows="10" cols="68"><%= problem.answer%></textarea>
+        </div>
+        <div class="form-group">
+          <label for="problem[testingInput]" class="form-label">Testing Input</label>
+          <textarea class='form-control' id="testingInput" placeholder="Testing Input" name="problem[testingInput]" rows="10" cols="68"><%= problem.testingInput%></textarea>
+        </div>
+        <div class="form-group">
+          <label for="problem[solution]" class="form-label">Solution</label>
+          <code><textarea class='form-control' id="storyOutput" placeholder ="Solution" name="problem[solution]" rows="5" cols="68"></textarea></code>
+        </div>
+        <div class="form-group">
+          <label for="problem[sampleInputOne]" class="form-label">Sample Input One</label>
+          <code><textarea class='form-control' id="storyOutput" placeholder ="Sample Input One"  name="problem[sampleInputOne]" rows="5" cols="68"><%= problem.sampleInputOne%></textarea></code>
+        </div>
+        <div class="form-group">
+          <label for="problem[sampleOutputOne]" class="form-label">Sample Output One</label>
+          <code><textarea class='form-control' id="storyOutput" placeholder ="Sample Output One" name="problem[sampleOutputOne]" rows="5" cols="68"><%= problem.sampleOutputOne%></textarea></code>
+        </div>
+        <div class="form-group">
+          <label for="problem[sampleInputTwo]"" class="form-label">Sample Input Two</label>
+          <code><textarea class='form-control' id="storyOutput" placeholder ="Sample Input Two" name="problem[sampleInputTwo]" rows="5" cols="68"><%= problem.sampleInputTwo%></textarea></code>
+        </div>
+        <div class="form-group">
+          <label for="problem[sampleOutputTwo]" class="form-label">Sample Output Two</label>
+          <code><textarea class='form-control' id="storyOutput" placeholder ="Sample Output Two" name="problem[sampleOutputTwo]" rows="5" cols="68"><%= problem.sampleOutputTwo%></textarea></code>
+        </div>
+        <div class="form-group center">
+          <button class='btn btn-lg btn-primary'>Submit!</button>
+          <a href="/problem" class ="btn btn-lg btn-warning">Go back</a>
+        </div>
+  
+      </form>
+  
+   
+  </section>
+<%- include("../partials/footer") %>
