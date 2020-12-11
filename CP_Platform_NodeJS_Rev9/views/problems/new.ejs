@@ -1,0 +1,84 @@
+<%- include("../partials/head") %>
+<link rel="stylesheet" href="/css/style.css">
+
+</head>
+<%- include("../partials/navbar") %>
+
+<body>
+
+  <section class="container align-items-center">
+
+    <h2 class="newChallengeHeader">New challenge for kids</h2>
+    
+
+
+      <form action="/problem" method="POST" style=" border:2px black dashed; margin-bottom:2%">
+        <div class="form-group">
+          <label for="name" class="form-label" style="margin-top:1%">Name of the challenge</label>
+          <input class='form-control' type="text" placeholder="Title of the challenge" name="name">
+        </div>
+        <div class="form-group">
+          <label for="time" class="form-label">Time to complete</label>
+          <input class='form-control' type="text" placeholder="Time to complete" name="time">
+        </div>
+        <div class="form-group">
+          <label for="problem" class="form-label">Challenge Description</label>
+          <textarea class='form-control' id="story" placeholder="Description of the challenge"  name="problem" rows="10" cols="68"></textarea>
+        </div>
+        
+        <div class="form-group">
+          <label for="input" class="form-label">Input</label>
+          <textarea class='form-control' id="storyInput" placeholder="Input(optional)" name="input" rows="5" cols="68"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="output" class="form-label">Output</label>
+          <code><textarea class='form-control' id="storyOutput" placeholder="Output(optional)" name="output" rows="5" cols="68"></textarea></code>
+        </div>
+        <div class="form-group">
+          <label for="level" class="form-label">Difficulty level (1-5)</label>
+          <input class='form-control' id="level" type="number" placeholder="Level" name="level">
+        </div>
+        <div class="form-group">
+          <label for="answer" class="form-label">Testing Output</label>
+          <textarea class='form-control' id="answer" placeholder="Testing Output"  name="answer" rows="10" cols="68"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="testingInput" class="form-label">Testing Input</label>
+          <textarea class='form-control' id="testingInput" placeholder="Testing Input"  name="testingInput" rows="10" cols="68"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="sampleInputOne" class="form-label">Sample Input One</label>
+          <code><textarea class='form-control' id="storyOutput" placeholder ="Sample Input One"  name="sampleInputOne" rows="5" cols="68"></textarea></code>
+        </div>
+        <div class="form-group">
+          <label for="sampleOutputOne" class="form-label">Sample Output One</label>
+          <code><textarea class='form-control' id="storyOutput" placeholder ="Sample Output One" name="sampleOutputOne" rows="5" cols="68"></textarea></code>
+        </div>
+        <div class="form-group">
+          <label for="solution" class="form-label">Solution</label>
+          <code><textarea class='form-control' id="storyOutput" placeholder ="Solution" name="solution" rows="5" cols="68"></textarea></code>
+        </div>
+        <div class="form-group">
+          <label for="sampleInputTwo" class="form-label">Sample Input Two</label>
+          <code><textarea class='form-control' id="storyOutput" placeholder ="Sample Input Two" name="sampleInputTwo" rows="5" cols="68"></textarea></code>
+        </div>
+        <div class="form-group">
+          <label for="sampleOutputTwo" class="form-label">Sample Output Two</label>
+          <code><textarea class='form-control' id="storyOutput" placeholder ="Sample Output Two" name="sampleOutputTwo" rows="5" cols="68"></textarea></code>
+        </div> <div class="form-group">
+          <label for="image" class="form-label">Image</label>
+          <code><textarea class='form-control' id="image" placeholder ="Image" name="image" rows="5" cols="68"></textarea></code>
+        </div>
+        <div class="form-group center">
+          <button class='btn btn-lg btn-primary'>Submit!</button>
+          <a href="/problem" class ="btn btn-lg btn-warning">Go back</a>
+        </div>
+
+      </form>
+
+      
+  
+  </section>
+
+
+  <%- include("../partials/footer") %>

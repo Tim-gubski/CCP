@@ -1,0 +1,87 @@
+<%- include("../partials/head") %>
+
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/table.css">
+<link rel="stylesheet" href="/css/stars.css">
+
+</head>
+<%- include("../partials/navbar") %>
+<!--Main page to show the all available challenges in the database-->
+
+<body>
+  <section class="container">
+    <div class="row align-items-center">
+      <table id="problem-table" class="table mt-5">
+        <thead>
+          <tr>
+            <th class="problem">Problem</th>
+            <th class="category">Time</th>
+            <th class="level" data-field="level" onclick="sortColumn('Level')">Level</th>
+            <% if(currentUser && currentUser.isAdmin) { %>
+            <th class="points"> Edit</th>
+            <%}%>
+          </tr>
+        </thead>
+        <% gallery.forEach(function(problem){ %>
+
+        <tbody id="tableData">
+          <tr>
+            <td class="problem">
+              <h4><a href="/<%= problem._id%>"><%= problem.name %></a></h4>
+            </td>
+            <td class="category"><%= problem.time %></td>
+            <td>
+                <div class="starability-result" data-rating="<%= problem.level%>"></div>
+            </td>
+            <% if(currentUser && currentUser.isAdmin) { %>
+            <td class="points"><a href="/<%= problem._id%>/edit" class="btn btn-warning">EDIT</a>
+              <hr>
+              <form id="deleteform" action="/<%= problem._id %>?_method=DELETE" method="POST">
+                <button class="btn btn-secondary">DELETE</button>
+              </form>
+            </td>
+            <%}%>
+        </tr>
+        </tbody>
+        <% })%>
+      </table>
+    </div>
+    <% if(currentUser && currentUser.isAdmin) { %>
+    <div class="row align-items-center"> <a href="/problem/new" class="btn btn-success btnNew">ADD NEW CHALLENGE</a>
+    </div>
+    <%}%>
+</section>
+
+
+<script>
+  let sortDirection = false
+  let table = document.querySelector("#problem-table")
+  let tableData = document.querySelector("#tableData")
+  
+  console.log(tableData)
+
+
+  function sortColumn(columnName) {
+    const dataType = typeof columnName;
+    console.log(dataType);
+    sortDirection = !sortDirection;
+
+    switch (dataType){
+      case 'number':
+      sortNumberColumn(sortDirection, columnName);
+      break;
+    }
+   
+  }
+
+  function  sortNumberColumn (sort, columnName){
+    table = table.sort((p1,p2) => {
+      return sort ? p1[columnName] - p2[columnName] : p2[columnName] - p1[columnName] 
+    })
+  }
+
+</script>
+  
+  
+
+<%- include("../partials/footer") %>
